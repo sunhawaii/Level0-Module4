@@ -2,9 +2,61 @@
 Use boolean variables to control program logic between two different code
 paths.
 """
-
+import turtle
 
 if __name__ == '__main__':
+
+
+    weekend = True
+    weekday = False
+
+
+    if weekend:
+        print('Today is a weekend!')
+        if weekday:
+            print('Today is a weekday!')
+        else:
+            print('Today is not a weekday.' )
+
+
+    exam_failure = True
+    exam_sucess = False
+
+
+    if exam_failure:
+        print('You are a failure and failed the exam.')
+        if exam_sucess:
+            print('You succeded in passing this exam.')
+
+
+
+
+    game_over = True
+    game_going = False
+
+    if game_over:
+        print('The game is over.')
+
+
+
+    turt=turtle.Turtle
+
+    shape_red = True
+    shape_square = True
+
+    if shape_red:
+        turt.fillcolor('red')
+        turt.beginfill()
+        if shape_square:
+            for i in range(4):
+                turt.forward(100)
+                turt.right(90)
+    if shape_red and shape_square:
+        turt.fillcolor('red')
+        turt.beginfill()
+        turt.forward(100)
+        turt.right(90)
+
     # TODO)
     #  1. Use a boolean variable to indicate if it is the weekend.
     #     Display a different message to the user depending on whether it is
